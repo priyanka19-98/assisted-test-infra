@@ -20,8 +20,8 @@ UI_SERVICE_NAME := $(or $(UI_SERVICE_NAME),ocp-metal-ui)
 # nodes params
 ISO := $(or $(ISO), "") # ISO should point to a file that has the '.iso' extension. Otherwise deploy will fail!
 NUM_MASTERS :=  $(or $(NUM_MASTERS),3)
-WORKER_MEMORY ?= 8892
-MASTER_MEMORY ?= 16984
+WORKER_MEMORY ?= 40000
+MASTER_MEMORY ?= 40000
 NUM_WORKERS := $(or $(NUM_WORKERS),0)
 STORAGE_POOL_PATH := $(or $(STORAGE_POOL_PATH), $(PWD)/storage_pool)
 CLUSTER_ID := $(or $(CLUSTER_ID), "")
